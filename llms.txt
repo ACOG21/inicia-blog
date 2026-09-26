@@ -3,6 +3,8 @@
 Blog de inicIA: guias claras sobre agentes de IA, automatizacion y costos reales para negocios.
 inicIA AI blog: clear guides on AI agents, automation, and real costs for businesses.
 
+- [Chatbot vs asistente virtual vs agente de IA: diferencias reales (ES)](https://ia.adriana.homes/es/chatbot-vs-agente-ia-diferencias/): Chatbot, asistente virtual y agente de IA no son lo mismo: la diferencia es cuánta autonomía tienen. Definiciones simples, tabla comparativa, datos 2026 y cómo elegir.
+- [Chatbot vs Virtual Assistant vs AI Agent: The Real Differences (EN)](https://ia.adriana.homes/en/chatbot-vs-agente-ia-diferencias/): Chatbot, virtual assistant, and AI agent are not the same: the difference is how much autonomy each has. Simple definitions, comparison table, 2026 data, and how to choose.
 - [ChatGPT vs Claude vs Gemini: cuál le conviene a tu negocio en 2026 (ES)](https://ia.adriana.homes/es/chatgpt-vs-claude-vs-gemini-negocios-2026/): ChatGPT, Claude y Gemini cuestan ~$20 al mes. Comparativa práctica: en qué destaca cada uno y cómo elegir el que encaja con tu negocio. Guía 2026.
 - [ChatGPT vs Claude vs Gemini: Which Fits Your Business in 2026 (EN)](https://ia.adriana.homes/en/chatgpt-vs-claude-vs-gemini-negocios-2026/): ChatGPT, Claude, and Gemini each cost ~$20/month. A practical comparison: what each does best and how to pick the one that fits your business. 2026 guide.
 - [Qué es la automatización con IA: guía para empresarios (ES)](https://ia.adriana.homes/es/que-es-automatizacion-con-ia/): Qué es la automatización con IA: definición simple, diferencia con la automatización tradicional y qué procesos automatizar primero. Guía 2026.
