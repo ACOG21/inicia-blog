@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.w3.org/2000/sitemap/0.9">
   <url><loc>https://ia.adriana.homes/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://ia.adriana.homes/es/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://ia.adriana.homes/en/</loc><changefreq>weekly</changefreq></url>
@@ -23,4 +23,14 @@
   <url><loc>https://ia.adriana.homes/en/muse-supero-chatgpt-descargas-12-dias/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://ia.adriana.homes/es/que-es-un-agente-de-ia-negocios/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://ia.adriana.homes/en/que-es-un-agente-de-ia-negocios/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/es/tipos-de-agentes-de-ia-negocios/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/en/tipos-de-agentes-de-ia-negocios/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/es/como-funciona-un-agente-de-ia/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/en/como-funciona-un-agente-de-ia/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/es/glosario-terminos-ia-empresarios/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/en/glosario-terminos-ia-empresarios/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/es/que-es-gemelo-digital-twin/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/en/que-es-gemelo-digital-twin/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/es/que-es-lead-engine/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://ia.adriana.homes/en/que-es-lead-engine/</loc><changefreq>weekly</changefreq></url>
 </urlset>
