@@ -3,6 +3,8 @@
 Blog de inicIA: guias claras sobre agentes de IA, automatizacion y costos reales para negocios.
 inicIA AI blog: clear guides on AI agents, automation, and real costs for businesses.
 
+- [Qué es un CRM con IA y cómo cambia tus ventas (ES)](https://ia.adriana.homes/es/que-es-crm-con-ia/): Un CRM con IA califica leads, automatiza el follow-up, resume llamadas y predice cierres. Definición clara, precios de mercado 2026 y cómo elegir el tuyo.
+- [What Is an AI CRM and How It Changes Your Sales (EN)](https://ia.adriana.homes/en/que-es-crm-con-ia/): An AI CRM scores leads, automates follow-up, summarizes calls, and predicts closes. Clear definition, 2026 market pricing, and how to choose yours.
 - [Chatbot vs asistente virtual vs agente de IA: diferencias reales (ES)](https://ia.adriana.homes/es/chatbot-vs-agente-ia-diferencias/): Chatbot, asistente virtual y agente de IA no son lo mismo: la diferencia es cuánta autonomía tienen. Definiciones simples, tabla comparativa, datos 2026 y cómo elegir.
 - [Chatbot vs Virtual Assistant vs AI Agent: The Real Differences (EN)](https://ia.adriana.homes/en/chatbot-vs-agente-ia-diferencias/): Chatbot, virtual assistant, and AI agent are not the same: the difference is how much autonomy each has. Simple definitions, comparison table, 2026 data, and how to choose.
 - [ChatGPT vs Claude vs Gemini: cuál le conviene a tu negocio en 2026 (ES)](https://ia.adriana.homes/es/chatgpt-vs-claude-vs-gemini-negocios-2026/): ChatGPT, Claude y Gemini cuestan ~$20 al mes. Comparativa práctica: en qué destaca cada uno y cómo elegir el que encaja con tu negocio. Guía 2026.
