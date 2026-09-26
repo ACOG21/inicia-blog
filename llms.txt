@@ -3,6 +3,8 @@
 Blog de inicIA: guias claras sobre agentes de IA, automatizacion y costos reales para negocios.
 inicIA AI blog: clear guides on AI agents, automation, and real costs for businesses.
 
+- [ChatGPT vs Claude vs Gemini: cuál le conviene a tu negocio en 2026 (ES)](https://ia.adriana.homes/es/chatgpt-vs-claude-vs-gemini-negocios-2026/): ChatGPT, Claude y Gemini cuestan ~$20 al mes. Comparativa práctica: en qué destaca cada uno y cómo elegir el que encaja con tu negocio. Guía 2026.
+- [ChatGPT vs Claude vs Gemini: Which Fits Your Business in 2026 (EN)](https://ia.adriana.homes/en/chatgpt-vs-claude-vs-gemini-negocios-2026/): ChatGPT, Claude, and Gemini each cost ~$20/month. A practical comparison: what each does best and how to pick the one that fits your business. 2026 guide.
 - [Qué es la automatización con IA: guía para empresarios (ES)](https://ia.adriana.homes/es/que-es-automatizacion-con-ia/): Qué es la automatización con IA: definición simple, diferencia con la automatización tradicional y qué procesos automatizar primero. Guía 2026.
 - [Qué es la inteligencia artificial: guía para empresarios (ES)](https://ia.adriana.homes/es/que-es-inteligencia-artificial-empresas/): Qué es la inteligencia artificial explicada sin tecnicismos: definición, cómo funciona en un negocio real y por dónde empezar. Guía clara 2026.
 - [Claude Opus 5.5 cuesta 40% menos: qué significa para ti (ES)](https://ia.adriana.homes/es/claude-opus-5-5-40-porciento-menos-costo/): Anthropic lanzó Claude Opus 5.5: rinde como su tope Fable 5.1, cuesta 40% menos y es 30% más rápido. Qué significa para tu negocio.
