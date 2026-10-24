@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Agent Compute Engine: una microVM por agente, sin credenciales dentro | inicIA</title>
+<meta name="description" content="Google anunció el 22-oct-2026 Agent Compute Engine: cada agente corre en su propia microVM aislada por hardware, sin credenciales dentro, con pausa y reanudación por snapshot. La preview para clientes llega en los próximos meses; Agent Substrate en GKE ya se puede probar.">
+<meta name="keywords" content="Google Agent Compute Engine microVM agentes, infraestructura agentes IA gobernanza, Agent Substrate GKE agentes">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ia.adriana.homes/es/google-agent-compute-engine-2026/">
+    <link rel="alternate" hreflang="es" href="https://ia.adriana.homes/es/google-agent-compute-engine-2026/" />
+    <link rel="alternate" hreflang="en" href="https://ia.adriana.homes/en/google-agent-compute-engine-2026/" />
+    <link rel="alternate" hreflang="x-default" href="https://ia.adriana.homes/es/google-agent-compute-engine-2026/" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google Agent Compute Engine: una microVM por agente, sin credenciales dentro | inicIA">
+<meta property="og:description" content="Google anunció el 22-oct-2026 Agent Compute Engine: cada agente corre en su propia microVM aislada por hardware, sin credenciales dentro, con pausa y reanudación por snapshot. La preview para clientes llega en los próximos meses; Agent Substrate en GKE ya se puede probar.">
+<meta property="og:url" content="https://ia.adriana.homes/es/google-agent-compute-engine-2026/">
+<meta property="og:site_name" content="inicIA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Agent Compute Engine: una microVM por agente, sin credenciales dentro | inicIA">
+<meta name="twitter:description" content="Google anunció el 22-oct-2026 Agent Compute Engine: cada agente corre en su propia microVM aislada por hardware, sin credenciales dentro, con pausa y reanudación por snapshot. La preview para clientes llega en los próximos meses; Agent Substrate en GKE ya se puede probar.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Google Agent Compute Engine: una microVM por agente, sin credenciales dentro", "description": "Google anunció el 22-oct-2026 Agent Compute Engine: cada agente corre en su propia microVM aislada por hardware, sin credenciales dentro, con pausa y reanudación por snapshot. La preview para clientes llega en los próximos meses; Agent Substrate en GKE ya se puede probar.", "datePublished": "2026-10-24", "inLanguage": "es", "author": {"@type": "Organization", "name": "inicIA", "url": "https://ia.adriana.homes"}, "mainEntityOfPage": "https://ia.adriana.homes/es/google-agent-compute-engine-2026/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "inicIA", "item": "https://ia.adriana.homes/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ia.adriana.homes/es/"}, {"@type": "ListItem", "position": 3, "name": "Google Agent Compute Engine: una microVM por agente, sin credenciales dentro", "item": "https://ia.adriana.homes/es/google-agent-compute-engine-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es Google Agent Compute Engine?", "acceptedAnswer": {"@type": "Answer", "text": "Un servicio de Google Cloud anunciado el 22 de octubre de 2026 que le da a cada agente de IA su propia microVM aislada por hardware, sin credenciales dentro del sandbox, con pausa y reanudación por snapshot. Ya impulsa a Gemini y Antigravity; la preview para clientes abre en los próximos meses."}}, {"@type": "Question", "name": "¿Por qué importa que el sandbox no tenga credenciales?", "acceptedAnswer": {"@type": "Answer", "text": "Porque un agente que corre código y llama herramientas es un blanco atractivo. Si las credenciales viven fuera del sandbox y se insertan solo en el trayecto de la petición, un compromiso del sandbox no entrega tus llaves."}}, {"@type": "Question", "name": "¿Puedo probarlo hoy?", "acceptedAnswer": {"@type": "Answer", "text": "Agent Compute Engine aún no: su preview llega en los próximos meses, sin fecha exacta. Agent Substrate, el runtime abierto con el mismo diseño para GKE, sí se puede probar hoy en Kubernetes."}}, {"@type": "Question", "name": "¿Qué significan las cifras de densidad y latencia de Google?", "acceptedAnswer": {"@type": "Answer", "text": "Son cifras propias del proveedor: hasta 10 veces más densidad por memoria compartida, y 500 activaciones por segundo con menos de 500 ms de suspensión y reanudación en un benchmark de 200,000 agentes. Úsalas como referencia, no como garantía de tu carga de trabajo."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090E;--panel:#101218;--violet:#8064DB;--cyan:#23CBE5;--blue:#4F7BDD;--ivory:#F5F4F0;--text:#F5F4F0;--muted:#A9A7A1;--line:#20232e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.25;letter-spacing:-.01em}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(8,9,14,.92);backdrop-filter:blur(8px);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark .ia{color:var(--cyan)}
+.site-logo{display:block;width:auto}
+.lang-toggle{display:flex;gap:8px}
+.lang-toggle a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.lang-toggle a.active{color:#fff;border-color:var(--cyan)}
+main{padding:44px 0 60px}
+h1{font-size:clamp(30px,5vw,44px);margin:18px 0 10px}
+.byline{color:var(--muted);font-size:15px;margin-bottom:28px}
+h2{font-size:26px;margin:40px 0 14px;padding-top:8px}
+h2:first-of-type{margin-top:8px}
+h3{font-size:20px;margin:28px 0 10px;color:var(--cyan)}
+p{margin:0 0 18px}
+ul,ol{margin:0 0 20px 22px}
+li{margin-bottom:10px}
+blockquote{border-left:3px solid var(--violet);padding:6px 0 6px 18px;margin:24px 0;color:#d8d7d2;font-style:italic}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--cyan)}
+.cta{background:linear-gradient(135deg,rgba(128,100,219,.16),rgba(35,203,229,.12));border:1px solid rgba(128,100,219,.4);border-radius:16px;padding:26px;margin:40px 0}
+.cta p{margin-bottom:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#06060a;font-weight:700;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.btn:hover{filter:brightness(1.1)}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:6px}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 18px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--violet)}
+.card h2{font-size:22px;margin:0 0 8px;padding:0}
+.card p.desc{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.card .meta{font-size:13.5px;color:var(--muted)}
+.cat{display:inline-block;font-size:12.5px;color:var(--cyan);border:1px solid rgba(35,203,229,.4);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+footer.site{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.hero{padding:26px 0 10px}
+.hero h1{margin-top:0}
+.hero p.sub{color:var(--muted);font-size:18px;max-width:640px}
+.gateway{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+details.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--panel)}
+details.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq .a{padding:0 20px 18px;color:#d8d7d2}
+</style>
+</head><body>
+<header class="site"><div class="wrap">
+<a href="/es/"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:38px;width:auto;display:block"></a>
+<nav class="lang-toggle"><a class="active">ES</a><a href="/en/google-agent-compute-engine-2026/">EN</a></nav>
+</div></header>
+<main><div class="wrap">
+<nav class="breadcrumb"><a href="/es/">Blog</a> &nbsp;/&nbsp; noticias</nav>
+<h1>Google Agent Compute Engine: una microVM por agente, sin credenciales dentro</h1>
+<p class="byline">Por <strong>inicIA</strong> · 24 de octubre de 2026 · 6 min de lectura</p>
+<h2>Respuesta directa</h2>
+<p><strong>Google Cloud</strong> anunció el <strong>22 de octubre de 2026</strong>, en AGNTCon + MCPCon (San José), <strong>Agent Compute Engine</strong>: un servicio de cómputo construido para correr agentes de IA, donde <strong>cada agente tiene su propia microVM aislada por hardware</strong>. El servicio ya impulsa a Gemini como agente de trabajo y a Antigravity, y abrirá su <strong>preview para clientes en los próximos meses</strong> (sin fecha exacta). La tesis: los agentes ya no son un script más en tu servidor; necesitan su propia computadora, con su propia identidad, y sin secretos dentro que un ataque pueda robar.</p>
+<h2>Cómo funciona, en cuatro piezas</h2>
+<ul>
+<li><strong>Una computadora por agente</strong>: cada microVM tiene su propio kernel invitado y acceso root, corre sobre Cloud Hypervisor con el hardware Titanium de Google, y puede ejecutar scripts, manejar un navegador sin interfaz y escribir código en ciclos que pueden durar semanas.</li>
+<li><strong>Sin credenciales dentro del sandbox</strong>: el sandbox nunca guarda credenciales ni llaves de API del usuario. Las peticiones salientes pasan por un proxy local hacia el Agent Gateway fuera del nodo, que valida la delegación del usuario, la identidad del agente y la del nodo, e inserta la credencial en el trayecto (token swap en vuelo).</li>
+<li><strong>Pausa y reanudación por snapshot</strong>: cuando el agente termina una llamada a herramienta y entra en fase de espera (pensando o esperando a una persona), la microVM se pausa por checkpoint y se reanuda desde el snapshot. Eso es clave para el costo: los agentes ociosos no deberían cobrar como máquinas encendidas todo el tiempo.</li>
+<li><strong>Densidad por memoria compartida</strong>: con memoria copy-on-write, muchos agentes que parten de la misma base comparten memoria hasta que uno cambia algo. Google reporta hasta <strong>10 veces más densidad</strong> de cómputo con este diseño, una cifra propia sin validación independiente publicada.</li>
+</ul>
+<h2>La otra mitad del anuncio: gobernanza donde sea que corran tus agentes</h2>
+<p>Junto a Agent Compute Engine, Google extendió su pila de gobernanza de <strong>Gemini for business</strong> (Agent Gateway, Agent Registry, Agent Identity y observabilidad) para cubrir agentes que corren fuera de su nube: en Cloud Run y Google Kubernetes Engine, con cobertura entre nubes, on-prem y endpoints gestionados descrita como en preview próximamente. Y publicó <strong>Agent Substrate</strong> en GKE, un runtime abierto con el mismo diseño que sí se puede probar hoy en Kubernetes. Google reporta para Agent Substrate un benchmark de <strong>200,000 agentes</strong> con <strong>500 activaciones por segundo</strong> y <strong>menos de 500 milisegundos</strong> de latencia de suspensión y reanudación, cifras propias del proveedor.</p>
+<h2>Qué significa para tu negocio</h2>
+<ol>
+<li><strong>La infraestructura de agentes ya es una categoría de compra</strong>: sandbox, identidad, política de acceso, checkpoint y topología de despliegue son decisiones de arquitectura, no detalles. Si tu proveedor de agentes no puede explicarte dónde corren sus agentes ni dónde viven las credenciales, esa es una pregunta pendiente, no un detalle técnico.</li>
+<li><strong>El costo se juega en la pausa</strong>: un agente que espera aprobación humana o una herramienta lenta no debería facturar como si estuviera trabajando. Pregunta cómo se cobra el tiempo ocioso antes de firmar.</li>
+<li><strong>Portabilidad versus conveniencia</strong>: la ruta gestionada de Google (Agent Compute Engine) promete menos operación; la ruta abierta (Agent Substrate en GKE) promete portabilidad entre nubes. La decisión correcta depende de cuánto control necesitas y de dónde ya viven tus sistemas.</li>
+</ol>
+<h2>Enlaces relacionados</h2>
+<ul>
+<li><a href="https://ia.adriana.homes/es/cuando-agente-ia-se-equivoca/">Qué hacer cuando tu agente de IA se equivoca</a></li>
+<li><a href="https://ia.adriana.homes/es/privacidad-datos-ia-negocios/">Privacidad y datos: qué pasa con la información de tus clientes</a></li>
+<li><a href="https://ia.adriana.homes/es/implementar-ia-negocio-30-dias/">Cómo implementar IA en tu negocio en 30 días (plan paso a paso)</a></li>
+</ul>
+<h2>Preguntas frecuentes</h2>
+<details class="faq"><summary>¿Qué es Google Agent Compute Engine?</summary><div class="a">
+<p>Un servicio de Google Cloud anunciado el 22 de octubre de 2026 que le da a cada agente de IA su propia microVM aislada por hardware, sin credenciales dentro del sandbox, con pausa y reanudación por snapshot. Ya impulsa a Gemini y Antigravity; la preview para clientes abre en los próximos meses.</p>
+</div></details>
+<details class="faq"><summary>¿Por qué importa que el sandbox no tenga credenciales?</summary><div class="a">
+<p>Porque un agente que corre código y llama herramientas es un blanco atractivo. Si las credenciales viven fuera del sandbox y se insertan solo en el trayecto de la petición, un compromiso del sandbox no entrega tus llaves.</p>
+</div></details>
+<details class="faq"><summary>¿Puedo probarlo hoy?</summary><div class="a">
+<p>Agent Compute Engine aún no: su preview llega en los próximos meses, sin fecha exacta. Agent Substrate, el runtime abierto con el mismo diseño para GKE, sí se puede probar hoy en Kubernetes.</p>
+</div></details>
+<details class="faq"><summary>¿Qué significan las cifras de densidad y latencia de Google?</summary><div class="a">
+<p>Son cifras propias del proveedor: hasta 10 veces más densidad por memoria compartida, y 500 activaciones por segundo con menos de 500 ms de suspensión y reanudación en un benchmark de 200,000 agentes. Úsalas como referencia, no como garantía de tu carga de trabajo.</p>
+</div></details>
+</div></main>
+<footer class="site"><div class="wrap">
+<span style="display:flex;align-items:center;gap:10px"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:30px;width:auto;display:block"> <span>·&nbsp; © 2026 Todos los derechos reservados.</span></span>
+<span><a href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">Contacto por WhatsApp</a></span>
+</div></footer>
+</body></html>
