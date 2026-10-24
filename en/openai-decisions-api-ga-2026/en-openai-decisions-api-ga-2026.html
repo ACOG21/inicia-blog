@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decisions API Is Now Generally Available: Millisecond Decisions Without Paying for a Full Answer | inicIA</title>
+<meta name="description" content="OpenAI launched on Oct 22, 2026 the general availability of Decisions API on GPT-6 Luna: up to 400 questions per call, $0.10 per million input tokens with no output charge, GPT-Live integration and native JSON. The beta was October; GA changes the economics of repeated decisions.">
+<meta name="keywords" content="OpenAI Decisions API general availability, AI agent decisions milliseconds, GPT-6 Luna Decisions API price">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ia.adriana.homes/en/openai-decisions-api-ga-2026/">
+    <link rel="alternate" hreflang="es" href="https://ia.adriana.homes/es/openai-decisions-api-ga-2026/" />
+    <link rel="alternate" hreflang="en" href="https://ia.adriana.homes/en/openai-decisions-api-ga-2026/" />
+    <link rel="alternate" hreflang="x-default" href="https://ia.adriana.homes/es/openai-decisions-api-ga-2026/" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Decisions API Is Now Generally Available: Millisecond Decisions Without Paying for a Full Answer | inicIA">
+<meta property="og:description" content="OpenAI launched on Oct 22, 2026 the general availability of Decisions API on GPT-6 Luna: up to 400 questions per call, $0.10 per million input tokens with no output charge, GPT-Live integration and native JSON. The beta was October; GA changes the economics of repeated decisions.">
+<meta property="og:url" content="https://ia.adriana.homes/en/openai-decisions-api-ga-2026/">
+<meta property="og:site_name" content="inicIA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Decisions API Is Now Generally Available: Millisecond Decisions Without Paying for a Full Answer | inicIA">
+<meta name="twitter:description" content="OpenAI launched on Oct 22, 2026 the general availability of Decisions API on GPT-6 Luna: up to 400 questions per call, $0.10 per million input tokens with no output charge, GPT-Live integration and native JSON. The beta was October; GA changes the economics of repeated decisions.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Decisions API Is Now Generally Available: Millisecond Decisions Without Paying for a Full Answer", "description": "OpenAI launched on Oct 22, 2026 the general availability of Decisions API on GPT-6 Luna: up to 400 questions per call, $0.10 per million input tokens with no output charge, GPT-Live integration and native JSON. The beta was October; GA changes the economics of repeated decisions.", "datePublished": "2026-10-24", "inLanguage": "en", "author": {"@type": "Organization", "name": "inicIA", "url": "https://ia.adriana.homes"}, "mainEntityOfPage": "https://ia.adriana.homes/en/openai-decisions-api-ga-2026/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "inicIA", "item": "https://ia.adriana.homes/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ia.adriana.homes/en/"}, {"@type": "ListItem", "position": 3, "name": "Decisions API Is Now Generally Available: Millisecond Decisions Without Paying for a Full Answer", "item": "https://ia.adriana.homes/en/openai-decisions-api-ga-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is OpenAI&#x27;s Decisions API?", "acceptedAnswer": {"@type": "Answer", "text": "A service in general availability since October 22, 2026, built on GPT-6 Luna, that answers closed-ended questions: probabilities, choices among options, or scores, without generating a full text answer."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "$0.10 per million uncached input tokens ($0.01 cached), with no output-token charge, according to OpenAI&#x27;s published price. Regional premiums and long-context multipliers can apply."}}, {"@type": "Question", "name": "What changed from the beta?", "acceptedAnswer": {"@type": "Answer", "text": "GA doubles the limit to 400 questions per call and adds native GPT-Live integration, prompt caching, native JSON and images in each question&#x27;s instructions."}}, {"@type": "Question", "name": "When should I use Decisions API instead of a full model?", "acceptedAnswer": {"@type": "Answer", "text": "When the output you need is a bounded, repeated verdict: classify, route, filter or score. For free text or open analysis, use a full model."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090E;--panel:#101218;--violet:#8064DB;--cyan:#23CBE5;--blue:#4F7BDD;--ivory:#F5F4F0;--text:#F5F4F0;--muted:#A9A7A1;--line:#20232e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.25;letter-spacing:-.01em}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(8,9,14,.92);backdrop-filter:blur(8px);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark .ia{color:var(--cyan)}
+.site-logo{display:block;width:auto}
+.lang-toggle{display:flex;gap:8px}
+.lang-toggle a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.lang-toggle a.active{color:#fff;border-color:var(--cyan)}
+main{padding:44px 0 60px}
+h1{font-size:clamp(30px,5vw,44px);margin:18px 0 10px}
+.byline{color:var(--muted);font-size:15px;margin-bottom:28px}
+h2{font-size:26px;margin:40px 0 14px;padding-top:8px}
+h2:first-of-type{margin-top:8px}
+h3{font-size:20px;margin:28px 0 10px;color:var(--cyan)}
+p{margin:0 0 18px}
+ul,ol{margin:0 0 20px 22px}
+li{margin-bottom:10px}
+blockquote{border-left:3px solid var(--violet);padding:6px 0 6px 18px;margin:24px 0;color:#d8d7d2;font-style:italic}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--cyan)}
+.cta{background:linear-gradient(135deg,rgba(128,100,219,.16),rgba(35,203,229,.12));border:1px solid rgba(128,100,219,.4);border-radius:16px;padding:26px;margin:40px 0}
+.cta p{margin-bottom:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#06060a;font-weight:700;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.btn:hover{filter:brightness(1.1)}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:6px}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 18px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--violet)}
+.card h2{font-size:22px;margin:0 0 8px;padding:0}
+.card p.desc{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.card .meta{font-size:13.5px;color:var(--muted)}
+.cat{display:inline-block;font-size:12.5px;color:var(--cyan);border:1px solid rgba(35,203,229,.4);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+footer.site{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.hero{padding:26px 0 10px}
+.hero h1{margin-top:0}
+.hero p.sub{color:var(--muted);font-size:18px;max-width:640px}
+.gateway{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+details.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--panel)}
+details.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq .a{padding:0 20px 18px;color:#d8d7d2}
+</style>
+</head><body>
+<header class="site"><div class="wrap">
+<a href="/en/"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:38px;width:auto;display:block"></a>
+<nav class="lang-toggle"><a class="active">EN</a><a href="/es/openai-decisions-api-ga-2026/">ES</a></nav>
+</div></header>
+<main><div class="wrap">
+<nav class="breadcrumb"><a href="/en/">Blog</a> &nbsp;/&nbsp; news</nav>
+<h1>Decisions API Is Now Generally Available: Millisecond Decisions Without Paying for a Full Answer</h1>
+<p class="byline">By <strong>inicIA</strong> · October 24, 2026 · 6 min read</p>
+<h2>Direct answer</h2>
+<p><strong>OpenAI</strong> launched on <strong>October 22, 2026</strong> the <strong>general availability (GA)</strong> of <strong>Decisions API</strong>, its bounded-decision service built on <strong>GPT-6 Luna</strong>. Instead of asking a model for a full text answer, you pass evidence and closed-ended questions, and you get a <strong>probability, a choice among options, or a score</strong>. GA brings <strong>up to 400 questions per call</strong> (double the beta), <strong>native GPT-Live integration</strong> for voice, <strong>prompt caching</strong>, <strong>native JSON</strong> and <strong>images in each question&#x27;s instructions</strong>. Published pricing: <strong>$0.10 per million input tokens</strong> ($0.01 cached), with <strong>no output-token charge</strong>.</p>
+<h2>From beta to GA: what actually changed</h2>
+<ul>
+<li><strong>Public beta</strong>: October 6, 2026, after a limited preview in September. The October 22 GA takes it out of beta and makes it production-ready.</li>
+<li><strong>400 questions per call</strong>: double the beta limit. For a flow that classifies hundreds of documents or routes hundreds of requests, that cuts calls and accumulated latency.</li>
+<li><strong>Real-time voice</strong>: native GPT-Live integration lets voice apps react while the person is speaking, without waiting for a full model response.</li>
+<li><strong>Native JSON and images</strong>: you can pass your app&#x27;s structured data directly and compare multiple images against a shared reference, inside each question&#x27;s instructions.</li>
+<li><strong>Reported speed</strong>: OpenAI says decisions can be up to <strong>10 times faster</strong> than routing the same bounded decision through the Responses API with GPT-6 Luna, with <strong>100 to 180 millisecond</strong> latencies in reported cases (for example, Speak cut the delay between actions in its tutoring product from 1.4 seconds to 0.13 seconds, according to launch coverage).</li>
+</ul>
+<h2>What it is good for in a business (and what it is not)</h2>
+<ol>
+<li><strong>Classification and routing</strong>: classifying documents, tickets, requests and messages; routing each case to the right flow; categorizing financial transactions. Repeated decisions, closed answers, high volume.</li>
+<li><strong>Scores and filters</strong>: evaluating whether an input meets a condition, choosing among predefined options, or scoring against a rubric, before a larger model (or a human) takes the next step.</li>
+<li><strong>Scope: bounded, repeated verdicts</strong>: for free text, long analysis or conversation, use a full model. The value of Decisions API is paying only for the verdict when that is all you need.</li>
+<li><strong>The economics change with volume</strong>: at $0.10 per million input tokens and no output charge, the cost per decision drops against a full-model call. But the real price depends on your caching, your context and regional premiums: measure with your own traffic before projecting savings.</li>
+</ol>
+<h2>The honest note</h2>
+<ul>
+<li><strong>Vendor figures</strong>: the speed (up to 10 times faster) and the customer cases (Box, Datadog, Ramp, Sierra and Speak, according to the announcement) are reported by OpenAI, not independently measured. The valid test is your own benchmark with your own data.</li>
+<li><strong>Runs on GPT-6 Luna</strong>: Decisions API uses Luna reconfigured for accelerated inference. That explains the price and the speed, and also its limits.</li>
+<li><strong>GA does not change the architecture; it changes the risk</strong>: moving from beta to GA means you can build production on it with the stability of a general API. If you already had the beta in a pilot, GA is the moment to decide whether it stays.</li>
+</ul>
+<h2>Related links</h2>
+<ul>
+<li><a href="https://ia.adriana.homes/en/que-es-un-agente-de-ia-negocios/">What an AI agent is and how a real business uses one</a></li>
+<li><a href="https://ia.adriana.homes/en/kpis-medir-ia-negocio/">How to tell if your AI is working: the 5 KPIs that matter</a></li>
+<li><a href="https://ia.adriana.homes/en/que-procesos-automatizar-primero/">What to automate first: the impact/effort matrix</a></li>
+</ul>
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>What is OpenAI&#x27;s Decisions API?</summary><div class="a">
+<p>A service in general availability since October 22, 2026, built on GPT-6 Luna, that answers closed-ended questions: probabilities, choices among options, or scores, without generating a full text answer.</p>
+</div></details>
+<details class="faq"><summary>How much does it cost?</summary><div class="a">
+<p>$0.10 per million uncached input tokens ($0.01 cached), with no output-token charge, according to OpenAI&#x27;s published price. Regional premiums and long-context multipliers can apply.</p>
+</div></details>
+<details class="faq"><summary>What changed from the beta?</summary><div class="a">
+<p>GA doubles the limit to 400 questions per call and adds native GPT-Live integration, prompt caching, native JSON and images in each question&#x27;s instructions.</p>
+</div></details>
+<details class="faq"><summary>When should I use Decisions API instead of a full model?</summary><div class="a">
+<p>When the output you need is a bounded, repeated verdict: classify, route, filter or score. For free text or open analysis, use a full model.</p>
+</div></details>
+</div></main>
+<footer class="site"><div class="wrap">
+<span style="display:flex;align-items:center;gap:10px"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:30px;width:auto;display:block"> <span>·&nbsp; © 2026 All rights reserved.</span></span>
+<span><a href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">Contact por WhatsApp</a></span>
+</div></footer>
+</body></html>
