@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linux elimina la etiqueta obligatoria de IA: Torvalds apuesta por la competencia, no por la declaración | inicIA</title>
+<meta name="description" content="En la Maintainers Summit del 8 de octubre de 2026, los mantenedores del kernel Linux acordaron retirar la etiqueta &#x27;Assisted-by&#x27; obligatoria para parches con IA. Solo ~10% de los commits la llevaba. La lección: juzga el trabajo, no la herramienta.">
+<meta name="keywords" content="Linux kernel etiqueta IA Assisted-by, Linus Torvalds IA código, disclosure IA desarrollo software">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ia.adriana.homes/es/linux-kernel-sin-etiqueta-ia-torvalds-2026/">
+    <link rel="alternate" hreflang="es" href="https://ia.adriana.homes/es/linux-kernel-sin-etiqueta-ia-torvalds-2026/" />
+    <link rel="alternate" hreflang="en" href="https://ia.adriana.homes/en/linux-kernel-sin-etiqueta-ia-torvalds-2026/" />
+    <link rel="alternate" hreflang="x-default" href="https://ia.adriana.homes/es/linux-kernel-sin-etiqueta-ia-torvalds-2026/" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux elimina la etiqueta obligatoria de IA: Torvalds apuesta por la competencia, no por la declaración | inicIA">
+<meta property="og:description" content="En la Maintainers Summit del 8 de octubre de 2026, los mantenedores del kernel Linux acordaron retirar la etiqueta &#x27;Assisted-by&#x27; obligatoria para parches con IA. Solo ~10% de los commits la llevaba. La lección: juzga el trabajo, no la herramienta.">
+<meta property="og:url" content="https://ia.adriana.homes/es/linux-kernel-sin-etiqueta-ia-torvalds-2026/">
+<meta property="og:site_name" content="inicIA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Linux elimina la etiqueta obligatoria de IA: Torvalds apuesta por la competencia, no por la declaración | inicIA">
+<meta name="twitter:description" content="En la Maintainers Summit del 8 de octubre de 2026, los mantenedores del kernel Linux acordaron retirar la etiqueta &#x27;Assisted-by&#x27; obligatoria para parches con IA. Solo ~10% de los commits la llevaba. La lección: juzga el trabajo, no la herramienta.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Linux elimina la etiqueta obligatoria de IA: Torvalds apuesta por la competencia, no por la declaración", "description": "En la Maintainers Summit del 8 de octubre de 2026, los mantenedores del kernel Linux acordaron retirar la etiqueta 'Assisted-by' obligatoria para parches con IA. Solo ~10% de los commits la llevaba. La lección: juzga el trabajo, no la herramienta.", "datePublished": "2026-10-25", "inLanguage": "es", "author": {"@type": "Organization", "name": "inicIA", "url": "https://ia.adriana.homes"}, "mainEntityOfPage": "https://ia.adriana.homes/es/linux-kernel-sin-etiqueta-ia-torvalds-2026/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "inicIA", "item": "https://ia.adriana.homes/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ia.adriana.homes/es/"}, {"@type": "ListItem", "position": 3, "name": "Linux elimina la etiqueta obligatoria de IA: Torvalds apuesta por la competencia, no por la declaración", "item": "https://ia.adriana.homes/es/linux-kernel-sin-etiqueta-ia-torvalds-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Linux prohibió el código generado con IA?", "acceptedAnswer": {"@type": "Answer", "text": "No. Todo lo contrario: retiró el requisito de declarar su uso. Ni lo obliga ni lo prohíbe; lo juzga por su calidad."}}, {"@type": "Question", "name": "¿Qué era la etiqueta &quot;Assisted-by&quot;?", "acceptedAnswer": {"@type": "Answer", "text": "Una línea en el mensaje de commit, vigente desde enero de 2026, que pedía nombrar las herramientas de IA usadas para crear el parche."}}, {"@type": "Question", "name": "¿Por qué se retiró?", "acceptedAnswer": {"@type": "Answer", "text": "Porque casi nadie la usaba (alrededor del 10% de los commits) y porque no decía qué parte del trabajo hizo la IA. Una etiqueta sin contexto no ayuda a revisar."}}, {"@type": "Question", "name": "¿Qué sigue siendo obligatorio?", "acceptedAnswer": {"@type": "Answer", "text": "Que quien envía el parche entienda y pueda explicar el código, y que la firma de origen la ponga un humano, nunca la IA."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090E;--panel:#101218;--violet:#8064DB;--cyan:#23CBE5;--blue:#4F7BDD;--ivory:#F5F4F0;--text:#F5F4F0;--muted:#A9A7A1;--line:#20232e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.25;letter-spacing:-.01em}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(8,9,14,.92);backdrop-filter:blur(8px);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark .ia{color:var(--cyan)}
+.site-logo{display:block;width:auto}
+.lang-toggle{display:flex;gap:8px}
+.lang-toggle a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.lang-toggle a.active{color:#fff;border-color:var(--cyan)}
+main{padding:44px 0 60px}
+h1{font-size:clamp(30px,5vw,44px);margin:18px 0 10px}
+.byline{color:var(--muted);font-size:15px;margin-bottom:28px}
+h2{font-size:26px;margin:40px 0 14px;padding-top:8px}
+h2:first-of-type{margin-top:8px}
+h3{font-size:20px;margin:28px 0 10px;color:var(--cyan)}
+p{margin:0 0 18px}
+ul,ol{margin:0 0 20px 22px}
+li{margin-bottom:10px}
+blockquote{border-left:3px solid var(--violet);padding:6px 0 6px 18px;margin:24px 0;color:#d8d7d2;font-style:italic}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--cyan)}
+.cta{background:linear-gradient(135deg,rgba(128,100,219,.16),rgba(35,203,229,.12));border:1px solid rgba(128,100,219,.4);border-radius:16px;padding:26px;margin:40px 0}
+.cta p{margin-bottom:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#06060a;font-weight:700;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.btn:hover{filter:brightness(1.1)}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:6px}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 18px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--violet)}
+.card h2{font-size:22px;margin:0 0 8px;padding:0}
+.card p.desc{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.card .meta{font-size:13.5px;color:var(--muted)}
+.cat{display:inline-block;font-size:12.5px;color:var(--cyan);border:1px solid rgba(35,203,229,.4);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+footer.site{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.hero{padding:26px 0 10px}
+.hero h1{margin-top:0}
+.hero p.sub{color:var(--muted);font-size:18px;max-width:640px}
+.gateway{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+details.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--panel)}
+details.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq .a{padding:0 20px 18px;color:#d8d7d2}
+</style>
+</head><body>
+<header class="site"><div class="wrap">
+<a href="/es/"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:38px;width:auto;display:block"></a>
+<nav class="lang-toggle"><a class="active">ES</a><a href="/en/linux-kernel-sin-etiqueta-ia-torvalds-2026/">EN</a></nav>
+</div></header>
+<main><div class="wrap">
+<nav class="breadcrumb"><a href="/es/">Blog</a> &nbsp;/&nbsp; noticias</nav>
+<h1>Linux elimina la etiqueta obligatoria de IA: Torvalds apuesta por la competencia, no por la declaración</h1>
+<p class="byline">Por <strong>inicIA</strong> · 25 de octubre de 2026 · 6 min de lectura</p>
+<h2>Respuesta directa</h2>
+<p>Los mantenedores del <strong>kernel Linux</strong> acordaron retirar la etiqueta obligatoria <strong>&quot;Assisted-by&quot;</strong> que exigía declarar el uso de herramientas de IA en los parches enviados. La decisión se tomó en la <strong>Linux Kernel Maintainers Summit del 8 de octubre de 2026 en Praga</strong>: al día siguiente, el desarrollador <strong>Sasha Levin</strong> envió el parche que eliminaba el requisito de la documentación, el mantenedor de documentación <strong>Jonathan Corbet</strong> aplicó una versión revisada el <strong>14 de octubre</strong>, y el cambio quedó integrado en el árbol de desarrollo para <strong>Linux 7.4</strong> hacia el <strong>21 de octubre</strong>. El creador de Linux, <strong>Linus Torvalds</strong>, respalda el cambio: el problema no es usar IA, sino enviar código que no se entiende.</p>
+<h2>Por qué la etiqueta fracasó</h2>
+<ul>
+<li><strong>Cumplimiento bajísimo</strong>: solo alrededor del <strong>10%</strong> de los commits no fusionados aceptados hasta la séptima versión candidata (-rc7) de Linux 7.3 llevaban la etiqueta, pese a un uso mucho más amplio de herramientas de IA.</li>
+<li><strong>Una etiqueta que no decía nada</strong>: la etiqueta no distinguía si la IA escribió una función completa, explicó código ajeno, generó pruebas o pulió un mensaje de commit. Un rótulo sin contexto no ayuda al revisor a decidir nada.</li>
+<li><strong>La regla que sí se mantiene</strong>: sigue prohibido que la IA firme el certificado de origen del desarrollador (Developer Certificate of Origin), y los mantenedores pueden rechazar cualquier parche que quien lo envía no pueda entender o explicar.</li>
+<li><strong>Dos problemas distintos</strong>: Torvalds distingue entre desarrolladores competentes que usan IA como herramienta (él mismo usó Claude Code para entender parches difíciles y para trabajo en su rama de filemap) y personas que envían parches generados sin entenderlos. El primer grupo produce trabajo útil; el segundo inunda las bandejas de entrada.</li>
+</ul>
+<h2>La frase que resume el cambio</h2>
+<p>Torvalds comparó prohibir la IA con prohibir los editores de texto, y preguntó si no sería absurdo exigir que alguien demuestre que puede escribir un mensaje de commit perfecto sin ayuda. Su línea, citada en la cobertura: quiere &quot;gente competente usando la IA como herramienta&quot; y espera que quienes trabajan en el kernel &quot;entiendan lo que están haciendo&quot;. En la Cumbre de Código Abierto de Europa, además, llamó al &quot;vibe-coding&quot; una forma de encontrar alegría programando y una puerta de entrada al oficio.</p>
+<h2>La lección para tu negocio</h2>
+<ol>
+<li><strong>Juzga el entregable, no la herramienta</strong>: una política que exige declarar cada uso de IA suena rigurosa y termina siendo papel mojado si nadie la cumple. Lo que protege es la revisión.</li>
+<li><strong>Responsabilidad con nombre y apellido</strong>: quien entrega un trabajo debe poder explicarlo y defenderlo. Esa regla vale para código, para un informe financiero y para una propuesta comercial.</li>
+<li><strong>La etiqueta no sustituye a la revisión</strong>: si tu proceso depende de que alguien marque una casilla para saber si algo es confiable, tu proceso es la casilla. Cambia el proceso.</li>
+<li><strong>El contraste existe</strong>: mientras Linux retira la etiqueta, otros proyectos como NetBSD mantienen prohibido el código de IA desde 2024. No hay consenso en la industria: hay que elegir una política y sostenerla con revisión real.</li>
+</ol>
+<h2>La nota honesta</h2>
+<ul>
+<li><strong>El cambio aplica al árbol de desarrollo (Linux 7.4)</strong>: la documentación de la versión oficialmente publicada, Linux 7.3, todavía contiene el requisito anterior.</li>
+<li><strong>El consenso no fue unánime</strong>: algunos mantenedores creen que la declaración ayuda a evaluar envíos y temen que sin etiqueta cueste más identificar contribuciones automatizadas de baja calidad. Esa objeción es legítima y queda registrada.</li>
+<li><strong>Fuentes</strong>: mensaje de Sasha Levin a la lista de correo del kernel, cobertura de XDA Developers, WebProNews, LavX y The Register vía la correspondencia citada de Torvalds.</li>
+</ul>
+<h2>Enlaces relacionados</h2>
+<ul>
+<li><a href="https://ia.adriana.homes/es/entrenar-equipo-trabajar-con-ia/">Cómo entrenar a tu equipo para trabajar con IA (sin miedo)</a></li>
+<li><a href="https://ia.adriana.homes/es/cuando-agente-ia-se-equivoca/">Qué hacer cuando tu agente de IA se equivoca</a></li>
+<li><a href="https://ia.adriana.homes/es/kpis-medir-ia-negocio/">Cómo saber si tu IA está funcionando: los 5 KPIs que importan</a></li>
+</ul>
+<h2>Preguntas frecuentes</h2>
+<details class="faq"><summary>¿Linux prohibió el código generado con IA?</summary><div class="a">
+<p>No. Todo lo contrario: retiró el requisito de declarar su uso. Ni lo obliga ni lo prohíbe; lo juzga por su calidad.</p>
+</div></details>
+<details class="faq"><summary>¿Qué era la etiqueta &quot;Assisted-by&quot;?</summary><div class="a">
+<p>Una línea en el mensaje de commit, vigente desde enero de 2026, que pedía nombrar las herramientas de IA usadas para crear el parche.</p>
+</div></details>
+<details class="faq"><summary>¿Por qué se retiró?</summary><div class="a">
+<p>Porque casi nadie la usaba (alrededor del 10% de los commits) y porque no decía qué parte del trabajo hizo la IA. Una etiqueta sin contexto no ayuda a revisar.</p>
+</div></details>
+<details class="faq"><summary>¿Qué sigue siendo obligatorio?</summary><div class="a">
+<p>Que quien envía el parche entienda y pueda explicar el código, y que la firma de origen la ponga un humano, nunca la IA.</p>
+</div></details>
+</div></main>
+<footer class="site"><div class="wrap">
+<span style="display:flex;align-items:center;gap:10px"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:30px;width:auto;display:block"> <span>·&nbsp; © 2026 Todos los derechos reservados.</span></span>
+<span><a href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">Contacto por WhatsApp</a></span>
+</div></footer>
+</body></html>
