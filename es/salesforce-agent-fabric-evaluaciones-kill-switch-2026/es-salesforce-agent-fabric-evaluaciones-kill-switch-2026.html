@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salesforce conectó la evaluación con el apagado: el agente que falla ya no sigue atendiendo mientras alguien lo busca | inicIA</title>
+<meta name="description" content="Salesforce anunció el 27 de octubre de 2026 la siguiente fase de Agent Fabric: Agent Evals en beta en noviembre y disponibilidad general en enero de 2027, API Evals, un escáner personalizado en beta y un kill switch activado por evaluación en enero de 2027. La plataforma, según la empresa, ya gestiona más de 1,200 millones de solicitudes al día, y el problema que ataca es el fallo silencioso: agentes que entregan respuestas equivocadas y acumulan costo antes de que alguien lo note.">
+<meta name="keywords" content="Salesforce Agent Fabric Agent Evals, kill switch agentes IA, evaluación agentes producción">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ia.adriana.homes/es/salesforce-agent-fabric-evaluaciones-kill-switch-2026/">
+    <link rel="alternate" hreflang="es" href="https://ia.adriana.homes/es/salesforce-agent-fabric-evaluaciones-kill-switch-2026/" />
+    <link rel="alternate" hreflang="en" href="https://ia.adriana.homes/en/salesforce-agent-fabric-evaluaciones-kill-switch-2026/" />
+    <link rel="alternate" hreflang="x-default" href="https://ia.adriana.homes/es/salesforce-agent-fabric-evaluaciones-kill-switch-2026/" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Salesforce conectó la evaluación con el apagado: el agente que falla ya no sigue atendiendo mientras alguien lo busca | inicIA">
+<meta property="og:description" content="Salesforce anunció el 27 de octubre de 2026 la siguiente fase de Agent Fabric: Agent Evals en beta en noviembre y disponibilidad general en enero de 2027, API Evals, un escáner personalizado en beta y un kill switch activado por evaluación en enero de 2027. La plataforma, según la empresa, ya gestiona más de 1,200 millones de solicitudes al día, y el problema que ataca es el fallo silencioso: agentes que entregan respuestas equivocadas y acumulan costo antes de que alguien lo note.">
+<meta property="og:url" content="https://ia.adriana.homes/es/salesforce-agent-fabric-evaluaciones-kill-switch-2026/">
+<meta property="og:site_name" content="inicIA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Salesforce conectó la evaluación con el apagado: el agente que falla ya no sigue atendiendo mientras alguien lo busca | inicIA">
+<meta name="twitter:description" content="Salesforce anunció el 27 de octubre de 2026 la siguiente fase de Agent Fabric: Agent Evals en beta en noviembre y disponibilidad general en enero de 2027, API Evals, un escáner personalizado en beta y un kill switch activado por evaluación en enero de 2027. La plataforma, según la empresa, ya gestiona más de 1,200 millones de solicitudes al día, y el problema que ataca es el fallo silencioso: agentes que entregan respuestas equivocadas y acumulan costo antes de que alguien lo note.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Salesforce conectó la evaluación con el apagado: el agente que falla ya no sigue atendiendo mientras alguien lo busca", "description": "Salesforce anunció el 27 de octubre de 2026 la siguiente fase de Agent Fabric: Agent Evals en beta en noviembre y disponibilidad general en enero de 2027, API Evals, un escáner personalizado en beta y un kill switch activado por evaluación en enero de 2027. La plataforma, según la empresa, ya gestiona más de 1,200 millones de solicitudes al día, y el problema que ataca es el fallo silencioso: agentes que entregan respuestas equivocadas y acumulan costo antes de que alguien lo note.", "datePublished": "2026-10-31", "inLanguage": "es", "author": {"@type": "Organization", "name": "inicIA", "url": "https://ia.adriana.homes"}, "mainEntityOfPage": "https://ia.adriana.homes/es/salesforce-agent-fabric-evaluaciones-kill-switch-2026/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "inicIA", "item": "https://ia.adriana.homes/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ia.adriana.homes/es/"}, {"@type": "ListItem", "position": 3, "name": "Salesforce conectó la evaluación con el apagado: el agente que falla ya no sigue atendiendo mientras alguien lo busca", "item": "https://ia.adriana.homes/es/salesforce-agent-fabric-evaluaciones-kill-switch-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es Agent Evals de Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Una herramienta de Agent Fabric que genera pruebas antes del despliegue y evalúa agentes, modelos y servidores MCP en producción contra umbrales definidos por el cliente."}}, {"@type": "Question", "name": "¿Cuándo estará disponible?", "acceptedAnswer": {"@type": "Answer", "text": "En beta en noviembre de 2026 y con disponibilidad general prevista para enero de 2027, junto con el kill switch activado por evaluación."}}, {"@type": "Question", "name": "¿El kill switch ya existe?", "acceptedAnswer": {"@type": "Answer", "text": "El kill switch básico está disponible de forma general desde septiembre. Lo nuevo de enero de 2027 es conectarlo con los resultados de evaluación y con políticas de intervención."}}, {"@type": "Question", "name": "¿Qué hace API Evals?", "acceptedAnswer": {"@type": "Answer", "text": "Genera pruebas funcionales y de desempeño desde las especificaciones de API, para detectar cambios que rompan a los agentes antes de llegar a producción."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090E;--panel:#101218;--violet:#8064DB;--cyan:#23CBE5;--blue:#4F7BDD;--ivory:#F5F4F0;--text:#F5F4F0;--muted:#A9A7A1;--line:#20232e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.25;letter-spacing:-.01em}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(8,9,14,.92);backdrop-filter:blur(8px);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark .ia{color:var(--cyan)}
+.site-logo{display:block;width:auto}
+.lang-toggle{display:flex;gap:8px}
+.lang-toggle a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.lang-toggle a.active{color:#fff;border-color:var(--cyan)}
+main{padding:44px 0 60px}
+h1{font-size:clamp(30px,5vw,44px);margin:18px 0 10px}
+.byline{color:var(--muted);font-size:15px;margin-bottom:28px}
+h2{font-size:26px;margin:40px 0 14px;padding-top:8px}
+h2:first-of-type{margin-top:8px}
+h3{font-size:20px;margin:28px 0 10px;color:var(--cyan)}
+p{margin:0 0 18px}
+ul,ol{margin:0 0 20px 22px}
+li{margin-bottom:10px}
+blockquote{border-left:3px solid var(--violet);padding:6px 0 6px 18px;margin:24px 0;color:#d8d7d2;font-style:italic}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--cyan)}
+.cta{background:linear-gradient(135deg,rgba(128,100,219,.16),rgba(35,203,229,.12));border:1px solid rgba(128,100,219,.4);border-radius:16px;padding:26px;margin:40px 0}
+.cta p{margin-bottom:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#06060a;font-weight:700;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.btn:hover{filter:brightness(1.1)}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:6px}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 18px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--violet)}
+.card h2{font-size:22px;margin:0 0 8px;padding:0}
+.card p.desc{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.card .meta{font-size:13.5px;color:var(--muted)}
+.cat{display:inline-block;font-size:12.5px;color:var(--cyan);border:1px solid rgba(35,203,229,.4);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+footer.site{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.hero{padding:26px 0 10px}
+.hero h1{margin-top:0}
+.hero p.sub{color:var(--muted);font-size:18px;max-width:640px}
+.gateway{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+details.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--panel)}
+details.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq .a{padding:0 20px 18px;color:#d8d7d2}
+</style>
+</head><body>
+<header class="site"><div class="wrap">
+<a href="/es/"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:38px;width:auto;display:block"></a>
+<nav class="lang-toggle"><a class="active">ES</a><a href="/en/salesforce-agent-fabric-evaluaciones-kill-switch-2026/">EN</a></nav>
+</div></header>
+<main><div class="wrap">
+<nav class="breadcrumb"><a href="/es/">Blog</a> &nbsp;/&nbsp; noticias</nav>
+<h1>Salesforce conectó la evaluación con el apagado: el agente que falla ya no sigue atendiendo mientras alguien lo busca</h1>
+<p class="byline">Por <strong>inicIA</strong> · 31 de octubre de 2026 · 6 min de lectura</p>
+<h2>Respuesta directa</h2>
+<p>El <strong>27 de octubre de 2026</strong>, <strong>Salesforce</strong> detalló la siguiente fase de <strong>Agent Fabric</strong>, su plano de control para gestionar agentes en varias plataformas. La novedad central es que la evaluación deja de ser solo un informe: <strong>Agent Evals</strong> genera pruebas antes del despliegue y evalúa agentes, modelos y servidores MCP en producción contra umbrales definidos por el cliente. Cuando un resultado queda por debajo del umbral, el sistema inicia una intervención predefinida, incluido el <strong>kill switch del agente</strong>, con un paso de aprobación cuando la política del equipo lo exige.</p>
+<h2>Qué llega y cuándo</h2>
+<ul>
+<li><strong>Agent Evals:</strong> beta en noviembre de 2026 y disponibilidad general en enero de 2027. Se anunció por primera vez en Dreamforce, en septiembre, y ahora suma fechas y evaluación en producción.</li>
+<li><strong>API Evals:</strong> genera pruebas funcionales y de desempeño desde las especificaciones de las API de las que dependen los agentes, para detectar cambios que los rompan antes de llegar a producción.</li>
+<li><strong>Triggered-Agent Kill Switch:</strong> programado para enero de 2027. Conecta el resultado de una evaluación con una intervención regida por política, como poner un agente en cuarentena. El kill switch básico ya está disponible de forma general desde septiembre.</li>
+<li><strong>Custom Agent Scanner (beta):</strong> extiende el descubrimiento a sistemas internos, entornos detrás de cortafuegos y plataformas adicionales.</li>
+<li><strong>Controles de gasto:</strong> políticas de presupuesto que detienen solicitudes antes de superar el límite. La empresa afirma que sus controles recortan el uso de tokens hasta 75% en escenarios de prueba. Esa cifra es de escenarios de prueba de la empresa, no un ahorro garantizado.</li>
+</ul>
+<h2>El fallo silencioso, con un ejemplo marcado como hipotético</h2>
+<ul>
+<li><strong>La escala del problema:</strong> según el anuncio, Agent Fabric gestiona más de 1,200 millones de solicitudes al día y 96% de las empresas ejecuta agentes en más de una plataforma. Con ese volumen, un agente que falla en silencio acumula respuestas equivocadas y costo mientras el equipo localiza al dueño y consigue permiso para suspenderlo.</li>
+<li><strong>El ejemplo de Salesforce:</strong> un comercio cambia su agente de soporte de pedidos a un modelo más barato y las pruebas programadas detectan que el agente empieza a dar información inexacta sobre pedidos retrasados. La evaluación inicia el proceso para ponerlo en cuarentena, obtener la aprobación requerida y revisarlo y probarlo de nuevo. Salesforce presenta ese flujo como escenario ilustrativo, no como resultado reportado por un cliente.</li>
+<li><strong>La lección para tu negocio:</strong> antes de escalar agentes, define tres cosas por escrito: el umbral de calidad que dispara una acción, quién aprueba la intervención y qué pasa con el tráfico mientras el agente está en cuarentena. Sin esas tres respuestas, la evaluación es un tablero que se mira después del daño.</li>
+</ul>
+
+<div class="cta"><h2>¿Quieres IA que trabaje para tu negocio?</h2><p>Escríbenos por WhatsApp y hablemos de automatización y agentes de IA para tu negocio.</p><a class="btn" href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">WhatsApp inicIA</a></div>
+<h2>Enlaces relacionados</h2>
+<ul>
+<li><a href="https://ia.adriana.homes/es/cuando-agente-ia-se-equivoca/">Qué hacer cuando tu agente de IA se equivoca</a></li>
+<li><a href="https://ia.adriana.homes/es/kpis-medir-ia-negocio/">Cómo saber si tu IA está funcionando: los 5 KPIs que importan</a></li>
+<li><a href="https://ia.adriana.homes/es/que-es-un-agente-de-ia-negocios/">Qué es un agente de IA y cómo lo usa un negocio de verdad</a></li>
+</ul>
+<h2>Preguntas frecuentes</h2>
+<details class="faq"><summary>¿Qué es Agent Evals de Salesforce?</summary><div class="a">
+<p>Una herramienta de Agent Fabric que genera pruebas antes del despliegue y evalúa agentes, modelos y servidores MCP en producción contra umbrales definidos por el cliente.</p>
+</div></details>
+<details class="faq"><summary>¿Cuándo estará disponible?</summary><div class="a">
+<p>En beta en noviembre de 2026 y con disponibilidad general prevista para enero de 2027, junto con el kill switch activado por evaluación.</p>
+</div></details>
+<details class="faq"><summary>¿El kill switch ya existe?</summary><div class="a">
+<p>El kill switch básico está disponible de forma general desde septiembre. Lo nuevo de enero de 2027 es conectarlo con los resultados de evaluación y con políticas de intervención.</p>
+</div></details>
+<details class="faq"><summary>¿Qué hace API Evals?</summary><div class="a">
+<p>Genera pruebas funcionales y de desempeño desde las especificaciones de API, para detectar cambios que rompan a los agentes antes de llegar a producción.</p>
+</div></details>
+</div></main>
+<footer class="site"><div class="wrap">
+<span style="display:flex;align-items:center;gap:10px"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:30px;width:auto;display:block"> <span>·&nbsp; © 2026 Todos los derechos reservados.</span></span>
+<span><a href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">Contacto por WhatsApp</a></span>
+</div></footer>
+</body></html>
