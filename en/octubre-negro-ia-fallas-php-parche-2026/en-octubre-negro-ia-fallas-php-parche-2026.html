@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black October: AI found decade-old PHP flaws and the world rushed to patch | inicIA</title>
+<meta name="description" content="On October 21, 2026, the PHP project released emergency patches for two critical flaws, CVE-2026-109618 and CVE-2026-109619, rated 9.2, allowing unauthenticated remote code execution. The flaws, known as PHP2Shell, had gone undetected for more than a decade and surfaced with help from frontier models. The business lesson: patching within hours is the new speed, and a version inventory is the first task.">
+<meta name="keywords" content="PHP2Shell PHP flaws October 2026, PHP patches CVE-2026-109618, AI discovers PHP vulnerabilities">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ia.adriana.homes/en/octubre-negro-ia-fallas-php-parche-2026/">
+    <link rel="alternate" hreflang="es" href="https://ia.adriana.homes/es/octubre-negro-ia-fallas-php-parche-2026/" />
+    <link rel="alternate" hreflang="en" href="https://ia.adriana.homes/en/octubre-negro-ia-fallas-php-parche-2026/" />
+    <link rel="alternate" hreflang="x-default" href="https://ia.adriana.homes/es/octubre-negro-ia-fallas-php-parche-2026/" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Black October: AI found decade-old PHP flaws and the world rushed to patch | inicIA">
+<meta property="og:description" content="On October 21, 2026, the PHP project released emergency patches for two critical flaws, CVE-2026-109618 and CVE-2026-109619, rated 9.2, allowing unauthenticated remote code execution. The flaws, known as PHP2Shell, had gone undetected for more than a decade and surfaced with help from frontier models. The business lesson: patching within hours is the new speed, and a version inventory is the first task.">
+<meta property="og:url" content="https://ia.adriana.homes/en/octubre-negro-ia-fallas-php-parche-2026/">
+<meta property="og:site_name" content="inicIA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Black October: AI found decade-old PHP flaws and the world rushed to patch | inicIA">
+<meta name="twitter:description" content="On October 21, 2026, the PHP project released emergency patches for two critical flaws, CVE-2026-109618 and CVE-2026-109619, rated 9.2, allowing unauthenticated remote code execution. The flaws, known as PHP2Shell, had gone undetected for more than a decade and surfaced with help from frontier models. The business lesson: patching within hours is the new speed, and a version inventory is the first task.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Black October: AI found decade-old PHP flaws and the world rushed to patch", "description": "On October 21, 2026, the PHP project released emergency patches for two critical flaws, CVE-2026-109618 and CVE-2026-109619, rated 9.2, allowing unauthenticated remote code execution. The flaws, known as PHP2Shell, had gone undetected for more than a decade and surfaced with help from frontier models. The business lesson: patching within hours is the new speed, and a version inventory is the first task.", "datePublished": "2026-11-02", "inLanguage": "en", "author": {"@type": "Organization", "name": "inicIA", "url": "https://ia.adriana.homes"}, "mainEntityOfPage": "https://ia.adriana.homes/en/octubre-negro-ia-fallas-php-parche-2026/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "inicIA", "item": "https://ia.adriana.homes/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ia.adriana.homes/en/"}, {"@type": "ListItem", "position": 3, "name": "Black October: AI found decade-old PHP flaws and the world rushed to patch", "item": "https://ia.adriana.homes/en/octubre-negro-ia-fallas-php-parche-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is PHP2Shell?", "acceptedAnswer": {"@type": "Answer", "text": "The joint name for two critical PHP flaws, CVE-2026-109618 and CVE-2026-109619, rated 9.2, allowing unauthenticated remote code execution on affected servers."}}, {"@type": "Question", "name": "Which versions fix the flaw?", "acceptedAnswer": {"@type": "Answer", "text": "PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, released October 21, 2026. Versions 8.1 and older receive no official patch from the PHP project."}}, {"@type": "Question", "name": "How were the flaws found?", "acceptedAnswer": {"@type": "Answer", "text": "With help from frontier models: Calif used OpenAI's GPT-5.6 Sol and Wiz used models including Google's Gemini 4 Argon, inside a two-month coordinated disclosure."}}, {"@type": "Question", "name": "What should a business do today?", "acceptedAnswer": {"@type": "Answer", "text": "Inventory every PHP site and server, apply the patch for its version or migrate if it runs an unsupported version, and ask its provider for the exact version and the date the patch was applied."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090E;--panel:#101218;--violet:#8064DB;--cyan:#23CBE5;--blue:#4F7BDD;--ivory:#F5F4F0;--text:#F5F4F0;--muted:#A9A7A1;--line:#20232e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.25;letter-spacing:-.01em}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(8,9,14,.92);backdrop-filter:blur(8px);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark .ia{color:var(--cyan)}
+.site-logo{display:block;width:auto}
+.lang-toggle{display:flex;gap:8px}
+.lang-toggle a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.lang-toggle a.active{color:#fff;border-color:var(--cyan)}
+main{padding:44px 0 60px}
+h1{font-size:clamp(30px,5vw,44px);margin:18px 0 10px}
+.byline{color:var(--muted);font-size:15px;margin-bottom:28px}
+h2{font-size:26px;margin:40px 0 14px;padding-top:8px}
+h2:first-of-type{margin-top:8px}
+h3{font-size:20px;margin:28px 0 10px;color:var(--cyan)}
+p{margin:0 0 18px}
+ul,ol{margin:0 0 20px 22px}
+li{margin-bottom:10px}
+blockquote{border-left:3px solid var(--violet);padding:6px 0 6px 18px;margin:24px 0;color:#d8d7d2;font-style:italic}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--cyan)}
+.cta{background:linear-gradient(135deg,rgba(128,100,219,.16),rgba(35,203,229,.12));border:1px solid rgba(128,100,219,.4);border-radius:16px;padding:26px;margin:40px 0}
+.cta p{margin-bottom:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#06060a;font-weight:700;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.btn:hover{filter:brightness(1.1)}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:6px}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 18px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--violet)}
+.card h2{font-size:22px;margin:0 0 8px;padding:0}
+.card p.desc{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.card .meta{font-size:13.5px;color:var(--muted)}
+.cat{display:inline-block;font-size:12.5px;color:var(--cyan);border:1px solid rgba(35,203,229,.4);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+footer.site{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.hero{padding:26px 0 10px}
+.hero h1{margin-top:0}
+.hero p.sub{color:var(--muted);font-size:18px;max-width:640px}
+.gateway{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+details.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--panel)}
+details.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq .a{padding:0 20px 18px;color:#d8d7d2}
+</style>
+</head><body>
+<header class="site"><div class="wrap">
+<a href="/en/"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:38px;width:auto;display:block"></a>
+<nav class="lang-toggle"><a class="active">EN</a><a href="/es/octubre-negro-ia-fallas-php-parche-2026/">ES</a></nav>
+</div></header>
+<main><div class="wrap">
+<nav class="breadcrumb"><a href="/en/">Blog</a> &nbsp;/&nbsp; noticias</nav>
+<h1>Black October: AI found decade-old PHP flaws and the world rushed to patch</h1>
+<p class="byline">By <strong>inicIA</strong> · November 2, 2026 · 6 min read</p>
+<h2>Direct answer</h2>
+<p>On <strong>October 21, 2026</strong>, the PHP project released emergency patches for two critical flaws, <strong>CVE-2026-109618 and CVE-2026-109619</strong>, known together as <strong>PHP2Shell</strong>. Each carries a severity score of <strong>9.2 out of 10</strong> and lets an attacker <strong>run code remotely without logging in</strong> on an affected server. The flaws affect the PHP language itself, which powers about <strong>70% of websites</strong> whose server-side technology is known, and had gone <strong>undetected for more than a decade</strong> until researchers using frontier models found them in August 2026.</p>
+<h2>What happened, in order</h2>
+<ul>
+<li><strong>August 2026, the discovery:</strong> researchers at Calif reported the first flaw on August 11 using OpenAI's GPT-5.6 Sol, inside the Patch the Planet initiative. Wiz, Alphabet's security firm, reported the second on August 24 using models including Google's Gemini 4 Argon.</li>
+<li><strong>Two months of quiet coordination:</strong> OpenAI, Wiz, Cloudflare and the PHP project prepared the patches before disclosure, per Computer Weekly and Dig.watch coverage.</li>
+<li><strong>October 20, the leak:</strong> basic details and a demonstration video leaked on social media before the patch, which moved the release forward.</li>
+<li><strong>October 21, the patches:</strong> the fixed versions are PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Versions 8.1 and older no longer receive official support from the PHP project, although some distributions published their own patches.</li>
+<li><strong>The government response:</strong> agencies including the U.S. NSA, the U.K. NCSC and CERT-EU urged immediate patching or taking offline any site that could not be updated. France, the Netherlands, Finland and Denmark took government sites offline as a precaution while applying fixes.</li>
+</ul>
+<h2>What it means for your business</h2>
+<ul>
+<li><strong>Inventory comes first:</strong> the first task is knowing which PHP version runs on every site, server and hosting provider you use. Without that inventory, patching becomes guesswork.</li>
+<li><strong>The same advance defends and attacks:</strong> the AI that helped find the flaw also speeds up exploit creation. The window between disclosure and active attack is measured in hours, and CISA confirmed active exploitation in the following week.</li>
+<li><strong>Old versions stay exposed:</strong> if your site runs PHP 8.1 or older, the official project publishes no patch. That site needs a migration plan or a distribution patch, with a date, not a promise.</li>
+<li><strong>Temporary mitigation helps and has a limit:</strong> PHP maintainers warn that mitigations reduce exposure to certain attack paths, and only the update provides the complete fix.</li>
+<li><strong>Ask your provider in writing:</strong> request the exact version running your site, the date the patch was applied and the evidence. A provider that answers vaguely about a 9.2 flaw is describing its own risk.</li>
+</ul>
+<p>Note: this article summarizes Computer Weekly, Dig.watch, HackerOne and BBC coverage from October 21 to 26, 2026, plus advisories from PHP, CERT-EU, NCSC and NSA. Severity scores and versions come from the official advisories cited.</p>
+
+<div class="cta"><h2>Want AI that works for your business?</h2><p>Message us on WhatsApp and let's talk about automation and AI agents for your business.</p><a class="btn" href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">WhatsApp inicIA</a></div>
+<h2>Related articles</h2>
+<ul>
+<li><a href="https://ia.adriana.homes/en/openai-monitoreo-agentes-fuga-modelo-2026/">OpenAI expanded agent monitoring: in the incident replay, the alert would have come 30 hours earlier</a></li>
+<li><a href="https://ia.adriana.homes/en/google-gemini-4-carbon-ciberseguridad-2026/">Google launched Gemini 4 Carbon: the model that hunts vulnerabilities</a></li>
+<li><a href="https://ia.adriana.homes/en/cuando-agente-ia-se-equivoca/">What to do when your AI agent makes a mistake</a></li>
+</ul>
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>What is PHP2Shell?</summary><div class="a">
+<p>The joint name for two critical PHP flaws, CVE-2026-109618 and CVE-2026-109619, rated 9.2, allowing unauthenticated remote code execution on affected servers.</p>
+</div></details>
+<details class="faq"><summary>Which versions fix the flaw?</summary><div class="a">
+<p>PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, released October 21, 2026. Versions 8.1 and older receive no official patch from the PHP project.</p>
+</div></details>
+<details class="faq"><summary>How were the flaws found?</summary><div class="a">
+<p>With help from frontier models: Calif used OpenAI's GPT-5.6 Sol and Wiz used models including Google's Gemini 4 Argon, inside a two-month coordinated disclosure.</p>
+</div></details>
+<details class="faq"><summary>What should a business do today?</summary><div class="a">
+<p>Inventory every PHP site and server, apply the patch for its version or migrate if it runs an unsupported version, and ask its provider for the exact version and the date the patch was applied.</p>
+</div></details>
+</div></main>
+<footer class="site"><div class="wrap">
+<span style="display:flex;align-items:center;gap:10px"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:30px;width:auto;display:block"> <span>·&nbsp; © 2026 Todos los derechos reservados.</span></span>
+<span><a href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">Contacto por WhatsApp</a></span>
+</div></footer>
+</body></html>
