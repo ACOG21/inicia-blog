@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mistral Large 4: the sovereign open model with 1 trillion parameters and a license to read first | inicIA</title>
+<meta name="description" content="On October 29, 2026, Mistral AI published the weights of Mistral Large 4, nicknamed Le Chonk, a 1-trillion-parameter model with about 49 billion active per token, a 1-million-token context window and a modified MIT open-weight license. Any company can download and run it on its own servers, with one condition: anyone offering it as a model service needs a separate commercial license. The practical catch is hardware: the compressed version needs four Nvidia B200 or B300 GPUs.">
+<meta name="keywords" content="Mistral Large 4 open weights, Le Chonk 1 trillion parameters, Mistral model-as-a-service license">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ia.adriana.homes/en/mistral-large-4-soberano-abierto-2026/">
+    <link rel="alternate" hreflang="es" href="https://ia.adriana.homes/es/mistral-large-4-soberano-abierto-2026/" />
+    <link rel="alternate" hreflang="en" href="https://ia.adriana.homes/en/mistral-large-4-soberano-abierto-2026/" />
+    <link rel="alternate" hreflang="x-default" href="https://ia.adriana.homes/es/mistral-large-4-soberano-abierto-2026/" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mistral Large 4: the sovereign open model with 1 trillion parameters and a license to read first | inicIA">
+<meta property="og:description" content="On October 29, 2026, Mistral AI published the weights of Mistral Large 4, nicknamed Le Chonk, a 1-trillion-parameter model with about 49 billion active per token, a 1-million-token context window and a modified MIT open-weight license. Any company can download and run it on its own servers, with one condition: anyone offering it as a model service needs a separate commercial license. The practical catch is hardware: the compressed version needs four Nvidia B200 or B300 GPUs.">
+<meta property="og:url" content="https://ia.adriana.homes/en/mistral-large-4-soberano-abierto-2026/">
+<meta property="og:site_name" content="inicIA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mistral Large 4: the sovereign open model with 1 trillion parameters and a license to read first | inicIA">
+<meta name="twitter:description" content="On October 29, 2026, Mistral AI published the weights of Mistral Large 4, nicknamed Le Chonk, a 1-trillion-parameter model with about 49 billion active per token, a 1-million-token context window and a modified MIT open-weight license. Any company can download and run it on its own servers, with one condition: anyone offering it as a model service needs a separate commercial license. The practical catch is hardware: the compressed version needs four Nvidia B200 or B300 GPUs.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Mistral Large 4: the sovereign open model with 1 trillion parameters and a license to read first", "description": "On October 29, 2026, Mistral AI published the weights of Mistral Large 4, nicknamed Le Chonk, a 1-trillion-parameter model with about 49 billion active per token, a 1-million-token context window and a modified MIT open-weight license. Any company can download and run it on its own servers, with one condition: anyone offering it as a model service needs a separate commercial license. The practical catch is hardware: the compressed version needs four Nvidia B200 or B300 GPUs.", "datePublished": "2026-11-02", "inLanguage": "en", "author": {"@type": "Organization", "name": "inicIA", "url": "https://ia.adriana.homes"}, "mainEntityOfPage": "https://ia.adriana.homes/en/mistral-large-4-soberano-abierto-2026/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "inicIA", "item": "https://ia.adriana.homes/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ia.adriana.homes/en/"}, {"@type": "ListItem", "position": 3, "name": "Mistral Large 4: the sovereign open model with 1 trillion parameters and a license to read first", "item": "https://ia.adriana.homes/en/mistral-large-4-soberano-abierto-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What did Mistral publish on October 29, 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The weights of Mistral Large 4, a 1-trillion-parameter model with about 49 billion active per token, a 1-million-token context window and text and image input, available on Hugging Face."}}, {"@type": "Question", "name": "Is Mistral Large 4 free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Running it for in-house use carries no license fee under its modified MIT open-weight license. Offering it as a model service requires a separate commercial license from Mistral."}}, {"@type": "Question", "name": "What hardware does it need?", "acceptedAnswer": {"@type": "Answer", "text": "The compressed version needs a server with four Nvidia B200 or B300 GPUs, and Mistral's deployment examples use eight GPUs. It is not a laptop model, except for the distilled models announced for the coming months."}}, {"@type": "Question", "name": "What does it cost via API?", "acceptedAnswer": {"@type": "Answer", "text": "$0.70 per million input tokens and $2.10 per million output tokens through Mistral's API, per launch coverage."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090E;--panel:#101218;--violet:#8064DB;--cyan:#23CBE5;--blue:#4F7BDD;--ivory:#F5F4F0;--text:#F5F4F0;--muted:#A9A7A1;--line:#20232e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.25;letter-spacing:-.01em}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(8,9,14,.92);backdrop-filter:blur(8px);z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.wordmark .ia{color:var(--cyan)}
+.site-logo{display:block;width:auto}
+.lang-toggle{display:flex;gap:8px}
+.lang-toggle a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.lang-toggle a.active{color:#fff;border-color:var(--cyan)}
+main{padding:44px 0 60px}
+h1{font-size:clamp(30px,5vw,44px);margin:18px 0 10px}
+.byline{color:var(--muted);font-size:15px;margin-bottom:28px}
+h2{font-size:26px;margin:40px 0 14px;padding-top:8px}
+h2:first-of-type{margin-top:8px}
+h3{font-size:20px;margin:28px 0 10px;color:var(--cyan)}
+p{margin:0 0 18px}
+ul,ol{margin:0 0 20px 22px}
+li{margin-bottom:10px}
+blockquote{border-left:3px solid var(--violet);padding:6px 0 6px 18px;margin:24px 0;color:#d8d7d2;font-style:italic}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--cyan)}
+.cta{background:linear-gradient(135deg,rgba(128,100,219,.16),rgba(35,203,229,.12));border:1px solid rgba(128,100,219,.4);border-radius:16px;padding:26px;margin:40px 0}
+.cta p{margin-bottom:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#06060a;font-weight:700;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.btn:hover{filter:brightness(1.1)}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:6px}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 18px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--violet)}
+.card h2{font-size:22px;margin:0 0 8px;padding:0}
+.card p.desc{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.card .meta{font-size:13.5px;color:var(--muted)}
+.cat{display:inline-block;font-size:12.5px;color:var(--cyan);border:1px solid rgba(35,203,229,.4);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+footer.site{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.hero{padding:26px 0 10px}
+.hero h1{margin-top:0}
+.hero p.sub{color:var(--muted);font-size:18px;max-width:640px}
+.gateway{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+details.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--panel)}
+details.faq summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq .a{padding:0 20px 18px;color:#d8d7d2}
+</style>
+</head><body>
+<header class="site"><div class="wrap">
+<a href="/en/"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:38px;width:auto;display:block"></a>
+<nav class="lang-toggle"><a class="active">EN</a><a href="/es/mistral-large-4-soberano-abierto-2026/">ES</a></nav>
+</div></header>
+<main><div class="wrap">
+<nav class="breadcrumb"><a href="/en/">Blog</a> &nbsp;/&nbsp; noticias</nav>
+<h1>Mistral Large 4: the sovereign open model with 1 trillion parameters and a license to read first</h1>
+<p class="byline">By <strong>inicIA</strong> · November 2, 2026 · 6 min read</p>
+<h2>Direct answer</h2>
+<p>On <strong>October 29, 2026</strong>, Mistral AI published the <strong>weights of Mistral Large 4</strong>, nicknamed <strong>Le Chonk</strong>, three weeks after its public preview on October 6. It is a <strong>1-trillion-parameter</strong> model in total, with about <strong>49 billion active per token</strong>, a <strong>1-million-token</strong> context window and text and image input. The license is <strong>Mistral's Ecosystem Open-Weight License, a modified MIT license</strong>: free use, modification, fine-tuning and commercialization, with one condition that changes the business decision.</p>
+<h2>The license, with no surprises later</h2>
+<ul>
+<li><strong>Running it in-house carries no license fee:</strong> a bank, ministry or manufacturer running the model for its own staff pays no license, per license coverage.</li>
+<li><strong>Offering it as a service needs a separate license:</strong> a business operating a model-as-a-service offering needs a separate commercial license from Mistral before using it commercially.</li>
+<li><strong>The grey line is wrapped SaaS:</strong> coverage notes the announcement does not define precisely where a SaaS product using the model ends and a model service begins. Before building a business on that line, the license is read with counsel, not from the headline.</li>
+<li><strong>Downloaded weights do not update themselves:</strong> the published version reflects three additional weeks of reinforcement learning after preview, and weights downloaded today will not receive future changes without downloading a new version.</li>
+</ul>
+<h2>Hardware decides the decision</h2>
+<ul>
+<li><strong>Four GPUs as a practical floor:</strong> the compressed version runs on a server with four Nvidia B200 or B300 GPUs, per coverage, and Mistral's deployment examples use eight GPUs. A trillion parameters is about 2.2 terabytes of weights at BF16 precision and about 1.1 terabytes at 8-bit.</li>
+<li><strong>The API route already has a price:</strong> through Mistral's API, the model costs $0.70 per million input tokens and $2.10 per million output tokens, with Microsoft Foundry as the first cloud carrying it and Nvidia offering a NIM container.</li>
+<li><strong>The focus is code and cyber defense:</strong> Mistral reports 48% on Artificial Analysis's Coding Agent Index, using 47% fewer tokens per task than GLM-5.3, and 51% on the same firm's Cyber Index, with 96.6% refusal of malicious cyber requests in its tests. Those are company figures, with no independent verification published.</li>
+<li><strong>The aggressive version stays restricted:</strong> a more aggressive penetration-testing variant stays reserved for vetted security firms, such as Orange Cyberdefense, with early access.</li>
+<li><strong>Distilled models are coming:</strong> Mistral said it will release distilled models in the coming months, including one that runs on a laptop. The sovereign route for small teams may be waiting for that distilled model, not buying the eight-GPU server.</li>
+</ul>
+<p>Note: this article summarizes Mistral AI's October 29, 2026 announcement and TechCrunch, The Next Web and Skimwire coverage, plus the Hugging Face model card (Mistral-Large-4-1T-A52B). Performance and hardware figures are company-reported, with no independent verification published as of that date.</p>
+
+<div class="cta"><h2>Want AI that works for your business?</h2><p>Message us on WhatsApp and let's talk about automation and AI agents for your business.</p><a class="btn" href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">WhatsApp inicIA</a></div>
+<h2>Related articles</h2>
+<ul>
+<li><a href="https://ia.adriana.homes/en/como-elegir-proveedor-ia/">How to choose an AI vendor: 7 questions before signing</a></li>
+<li><a href="https://ia.adriana.homes/en/que-es-un-agente-de-ia-negocios/">What an AI agent is and how a real business uses one</a></li>
+<li><a href="https://ia.adriana.homes/en/sema4-30-auditoria-agentes-tokens-2026/">Sema4 3.0 promises 80% fewer tokens with forensic audit</a></li>
+</ul>
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>What did Mistral publish on October 29, 2026?</summary><div class="a">
+<p>The weights of Mistral Large 4, a 1-trillion-parameter model with about 49 billion active per token, a 1-million-token context window and text and image input, available on Hugging Face.</p>
+</div></details>
+<details class="faq"><summary>Is Mistral Large 4 free to use?</summary><div class="a">
+<p>Running it for in-house use carries no license fee under its modified MIT open-weight license. Offering it as a model service requires a separate commercial license from Mistral.</p>
+</div></details>
+<details class="faq"><summary>What hardware does it need?</summary><div class="a">
+<p>The compressed version needs a server with four Nvidia B200 or B300 GPUs, and Mistral's deployment examples use eight GPUs. It is not a laptop model, except for the distilled models announced for the coming months.</p>
+</div></details>
+<details class="faq"><summary>What does it cost via API?</summary><div class="a">
+<p>$0.70 per million input tokens and $2.10 per million output tokens through Mistral's API, per launch coverage.</p>
+</div></details>
+</div></main>
+<footer class="site"><div class="wrap">
+<span style="display:flex;align-items:center;gap:10px"><img class="site-logo" src="/assets/logo-wordmark.png" alt="inicIA" style="height:30px;width:auto;display:block"> <span>·&nbsp; © 2026 Todos los derechos reservados.</span></span>
+<span><a href="https://wa.me/17866120930?text=Hola%20inicIA%2C%20vengo%20del%20blog%20y%20quiero%20hablar%20de%20IA%20para%20mi%20negocio.">Contacto por WhatsApp</a></span>
+</div></footer>
+</body></html>
