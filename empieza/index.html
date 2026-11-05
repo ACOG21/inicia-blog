@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INICIA · Empieza aquí</title>
+<meta name="description" content="INICIA: sistemas de IA para tu negocio. Diagnóstico, cursos y recursos gratuitos. Inicia tu transición a la innovación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#08090E; --panel:#101218;
+    --ivory:#F5F4F0; --cyan:#23CBE5; --violet:#8064DB;
+    --muted:#9aa0ae; --line:rgba(255,255,255,.09);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:
+      radial-gradient(600px 340px at 85% -60px, rgba(128,100,219,.28), transparent 60%),
+      radial-gradient(560px 320px at 8% 108%, rgba(35,203,229,.16), transparent 60%),
+      var(--bg);
+    color:var(--ivory);
+    font-family:'Inter',-apple-system,'Segoe UI',sans-serif;
+    min-height:100vh;
+    display:flex; justify-content:center;
+    padding:44px 20px 36px;
+  }
+  .wrap{width:100%; max-width:430px; text-align:center}
+  .langbar{display:flex; justify-content:flex-end; margin-bottom:20px}
+  .lang{
+    display:inline-flex; gap:2px; padding:3px; border-radius:999px;
+    border:1px solid rgba(35,203,229,.45); background:rgba(6,8,14,.6);
+    box-shadow:0 0 10px rgba(35,203,229,.25), inset 0 0 8px rgba(128,100,219,.18);
+  }
+  .lang button{
+    appearance:none; border:0; cursor:pointer; padding:6px 14px; border-radius:999px;
+    font-family:'Inter',sans-serif; font-size:12.5px; font-weight:700; letter-spacing:.6px;
+    color:var(--muted); background:transparent; transition:all .15s ease;
+  }
+  .lang button.on{
+    color:#06121a; background:linear-gradient(92deg, var(--cyan), #7FD8FF);
+    box-shadow:0 0 12px rgba(35,203,229,.65);
+  }
+  .logo{width:172px; max-width:60%; height:auto; margin:0 auto 26px; display:block}
+  h1{
+    font-family:'Cormorant Garamond',serif; font-weight:600;
+    font-size:37px; line-height:1.12; letter-spacing:.2px; margin-bottom:12px;
+  }
+  h1 em{font-style:italic; color:var(--cyan)}
+  .sub{color:var(--muted); font-size:15.5px; line-height:1.55; margin-bottom:34px}
+  .sub strong{color:var(--ivory); font-weight:600}
+  .btn{
+    display:flex; align-items:center; gap:14px;
+    text-align:left; text-decoration:none; color:var(--ivory);
+    background:var(--panel); border:1px solid var(--line); border-radius:18px;
+    padding:17px 18px; margin-bottom:14px;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .btn:active{transform:scale(.985)}
+  .btn .ic{
+    width:47px; height:47px; flex:0 0 auto; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(6,8,14,.65); border:1px solid rgba(35,203,229,.8);
+    box-shadow:0 0 12px rgba(35,203,229,.45), 0 0 28px rgba(128,100,219,.30), inset 0 0 10px rgba(35,203,229,.28);
+  }
+  .btn .ic svg{width:24px; height:24px; stroke:#5EEBFF; color:#5EEBFF; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; filter:drop-shadow(0 0 5px rgba(35,203,229,.95)) drop-shadow(0 0 12px rgba(35,203,229,.55))}
+  .btn.primary .ic{border-color:rgba(168,140,255,.9); box-shadow:0 0 14px rgba(128,100,219,.6), 0 0 30px rgba(35,203,229,.4), inset 0 0 12px rgba(128,100,219,.35)}
+  .btn .tt{font-size:16.5px; font-weight:700; line-height:1.25}
+  .btn .ds{font-size:13px; color:var(--muted); font-weight:400; line-height:1.35; margin-top:2px}
+  .btn .arw{margin-left:auto; color:var(--muted); font-size:19px; flex:0 0 auto}
+  .btn.primary{
+    background:linear-gradient(92deg, rgba(35,203,229,.20), rgba(128,100,219,.24));
+    border:1px solid rgba(35,203,229,.55);
+  }
+  .btn.primary .arw{color:var(--cyan)}
+  .foot{margin-top:30px; color:var(--muted); font-size:12.5px; line-height:1.6}
+  .foot .brand{font-family:'Cormorant Garamond',serif; font-size:15px; color:var(--ivory); letter-spacing:.4px}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="langbar">
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+    <img class="logo" src="logo-inicia.png" alt="INICIA · Strategic Growth Partners">
+    <h1 data-i18n="h1">Inicia tu transición a la <em>innovación</em></h1>
+    <p class="sub" data-i18n="sub">Diseñamos los <strong>sistemas de IA</strong> que tú y tu negocio necesitan para crecer — y te enseñamos a dominarlos.</p>
+
+    <a class="btn primary" href="https://calendly.com/adrianaortizre">
+      <span class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><rect x="10.2" y="10.2" width="3.6" height="3.6" rx="1"/><path d="M9 7V4.2"/><path d="M12 7V4.2"/><path d="M15 7V4.2"/><path d="M9 19.8V17"/><path d="M12 19.8V17"/><path d="M15 19.8V17"/><path d="M7 9H4.2"/><path d="M7 12H4.2"/><path d="M7 15H4.2"/><path d="M19.8 9H17"/><path d="M19.8 12H17"/><path d="M19.8 15H17"/></svg></span>
+      <span><span class="tt" data-i18n="b1t">Quiero mi sistema de IA</span><span class="ds" style="display:block" data-i18n="b1d">Agenda tu diagnóstico y lo creamos a tu medida</span></span>
+      <span class="arw">→</span>
+    </a>
+
+    <a class="btn" href="https://inicia-asistente-personal.acog21.chatgpt.site/">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M2.5 9.2 12 4.5l9.5 4.7L12 13.9z"/><path d="M6.2 11.1v4.1c0 1.6 2.6 2.9 5.8 2.9s5.8-1.3 5.8-2.9v-4.1"/><path d="M21.5 9.2v4.6"/></svg></span>
+      <span><span class="tt" data-i18n="b2t">Cursos de INICIA</span><span class="ds" style="display:block" data-i18n="b2d">Empieza con tu asistente de IA en 2 horas · curso 1:1</span></span>
+      <span class="arw">→</span>
+    </a>
+
+    <a class="btn" href="https://ia.adriana.homes/recursos/">
+      <span class="ic"><svg viewBox="0 0 24 24"><rect x="3.2" y="8" width="17.6" height="3.8"/><path d="M5 11.8V20.8h14v-9"/><path d="M12 8v12.8"/><path d="M12 8c-3.9 0-4.9-1.2-4.9-2.7C7.1 3.7 8.4 2.9 9.7 3.4 11.2 4 11.9 6 12 8z"/><path d="M12 8c3.9 0 4.9-1.2 4.9-2.7 0-1.6-1.3-2.4-2.6-1.9C12.8 4 12.1 6 12 8z"/></svg></span>
+      <span><span class="tt" data-i18n="b3t">Recursos gratis</span><span class="ds" style="display:block" data-i18n="b3d">Prompts, checklist y guías de IA para tu negocio</span></span>
+      <span class="arw">→</span>
+    </a>
+
+    <a class="btn" href="https://adriana.homes">
+      <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2"/><path d="M12 3.4c2.5 2.3 3.7 5.2 3.7 8.6s-1.2 6.3-3.7 8.6c-2.5-2.3-3.7-5.2-3.7-8.6s1.2-6.3 3.7-8.6z"/></svg></span>
+      <span><span class="tt" data-i18n="b4t">Website principal</span><span class="ds" style="display:block">adriana.homes</span></span>
+      <span class="arw">→</span>
+    </a>
+
+    <p class="foot"><span class="brand">INICIA</span><br><span data-i18n="foot">Socios estratégicos de crecimiento</span></p>
+  </main>
+<script>
+  var T = {
+    es: {
+      h1: 'Inicia tu transición a la <em>innovación</em>',
+      sub: 'Diseñamos los <strong>sistemas de IA</strong> que tú y tu negocio necesitan para crecer — y te enseñamos a dominarlos.',
+      b1t: 'Quiero mi sistema de IA',
+      b1d: 'Agenda tu diagnóstico y lo creamos a tu medida',
+      b2t: 'Cursos de INICIA',
+      b2d: 'Empieza con tu asistente de IA en 2 horas · curso 1:1',
+      b3t: 'Recursos gratis',
+      b3d: 'Prompts, checklist y guías de IA para tu negocio',
+      b4t: 'Website principal',
+      foot: 'Socios estratégicos de crecimiento'
+    },
+    en: {
+      h1: 'Begin your transition to <em>innovation</em>',
+      sub: 'We design the <strong>AI systems</strong> you and your business need to grow — and we teach you to master them.',
+      b1t: 'I want my AI system',
+      b1d: 'Book your diagnosis and we build it tailored to you',
+      b2t: 'INICIA Courses',
+      b2d: 'Start with your AI assistant in 2 hours · 1:1 course',
+      b3t: 'Free resources',
+      b3d: 'Prompts, checklists and AI guides for your business',
+      b4t: 'Main website',
+      foot: 'Strategic Growth Partners'
+    }
+  };
+  function setLang(l){
+    var d = T[l]; if(!d) return;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n'); if(d[k]) el.innerHTML = d[k];
+    });
+    document.getElementById('btn-es').classList.toggle('on', l==='es');
+    document.getElementById('btn-en').classList.toggle('on', l==='en');
+    document.documentElement.lang = l;
+    try{ localStorage.setItem('inicia-lang', l); }catch(e){}
+  }
+  (function(){
+    var l = 'es';
+    if(location.hash === '#en') l = 'en';
+    else { try{ l = localStorage.getItem('inicia-lang') || 'es'; }catch(e){} }
+    setLang(l);
+  })();
+</script>
+</body>
+</html>
